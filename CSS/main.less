@@ -1,0 +1,46 @@
+@ColorWhite: #fff;
+@ColorLightGrey: #e0e0e0;
+@ColorGrey: #606060;
+@ColorBtnTop: #3181ac;
+@ColorBtnBottom: #42b4da;
+@fontfamily: arial, sans-serif;
+
+h1, h3, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    .wrapper_pages{
+        width: 1200px;
+        height: 100vh;
+        background: @ColorWhite;
+        margin: 0 auto;
+        border-left: 1px solid @ColorLightGrey;
+        border-right: 1px solid @ColorLightGrey;
+        font-family: @fontfamily;
+        header{
+            width: 100%;
+            height: 87px;
+            border-bottom: 7px solid @ColorLightGrey;
+            
+            .wrap_content{
+                width: 1065px;
+                margin: 0 auto;
+                color: @ColorGrey;
+                
+                padding-top: 10px;
+                h1{
+					font-size: 30px;
+                    line-height: 1.5;
+                    text-transform: capitalize;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }  
+}

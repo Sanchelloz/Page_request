@@ -1,0 +1,138 @@
+@import "main.less";
+@colorBlue: #1881ad;
+
+    
+
+#page_data_selection, #page_selected_data{
+    width: 100%;
+    .wrap_content{
+        width: 1065px;
+        height: ~"calc(100vh - 94px)";
+        margin: 0 auto;
+        position: relative;
+        h3{
+            font-size: 18px;
+            color: @colorBlue;
+            line-height: 4;
+        }
+        .field_wrap_checkboxes{
+            margin-bottom: 30px;
+            .column{
+                display: inline-block;
+                width: 210px;
+                ul li{
+                    list-style: none;
+                    margin-bottom: 7px;
+                    label{
+                        cursor: pointer;
+                        .custom-label {
+                            display: inline-block;
+                            //margin-right: .8em;
+                            
+                        }
+                        span.custom-check {
+                            vertical-align: middle;
+                            display: inline-block;
+                            position: relative;
+                            top: -.15em; /* Adjust to for best fit */
+                            //margin: 0 .4em;
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 5px;
+                            background: url('../IMG/checkbox_bg.png') 0 0 no-repeat;
+                            
+                        }
+                        //.custom-check.focus { background: url('../IMG/checkbox_bg.png') 0 0 no-repeat; }
+                        .custom-check.checked { background: url('../IMG/checkbox_check.png') no-repeat; }
+                        //.custom-check.checked.focus { background: url(../IMG/checkbox_check.png) no-repeat; }
+                    }
+                }
+            }
+            
+        }
+        .changes{
+            margin-bottom: 10px;
+            #selectAll, #clearSelection {
+            text-decoration: underline;
+            cursor: pointer;
+            }        
+        }
+        
+        .btn {
+            border-radius: 5px;
+            text-transform: uppercase;
+            color: @ColorWhite;
+            cursor: pointer;
+            border: none;
+            background: @ColorBtnTop;
+            background: -webkit-gradient(linear, left top, left bottom, from(@ColorBtnTop), to(@ColorBtnBottom));
+            background: -moz-linear-gradient(top,  @ColorBtnTop,  @ColorBtnBottom);
+            background: -ms-linear-gradient(top,  @ColorBtnTop,  @ColorBtnBottom);
+            background-image: -o-linear-gradient(top,rgb(49,129,172),rgb(66,180,218));
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='@ColorBtnTop', endColorstr='@ColorBtnBottom');
+        }
+        .Submit_btn{
+            width: 136px;
+            height: 35px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 35px;
+        }
+        .Submit_btn:active {
+            position: relative;
+            top: 1px;
+        
+        }
+    }
+}
+#page_selected_data{
+    padding-top: 19px;
+    .btn {
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: @ColorWhite;
+        cursor: pointer;
+        border: none;
+        background: @ColorBtnTop;
+        background: -webkit-gradient(linear, left top, left bottom, from(@ColorBtnTop), to(@ColorBtnBottom));
+        background: -moz-linear-gradient(top,  @ColorBtnTop,  @ColorBtnBottom);
+        background: -ms-linear-gradient(top,  @ColorBtnTop,  @ColorBtnBottom);
+        background-image: -o-linear-gradient(top,rgb(49,129,172),rgb(66,180,218));
+        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='@ColorBtnTop', endColorstr='@ColorBtnBottom');
+        
+    }
+    .Select_data_btn{
+        display: inline-block;
+        position: relative;
+        width: 136px;
+        height: 35px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 35px;
+        text-transform: uppercase;
+        .Select_data_arrow {
+            width: 20px;
+            height: 14px;
+            background: url('../IMG/arrow_back.png') 0 0 no-repeat;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            margin: 0;
+        }
+        span{
+            vertical-align: middle;
+            margin-left: 20px;
+        }
+        
+    }
+    .Select_data_btn:active {
+        position: relative;
+        top: 1px;
+        
+    }
+    h3{
+        display: inline-block;
+        margin-left: 15px;
+        line-height: 1!important;
+    }
+}

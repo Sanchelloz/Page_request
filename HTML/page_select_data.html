@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Page select front-end test project</title>
+        <meta name="description" content="table_info">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/page_select.css">
+    </head>
+    <body>
+        <div class="wrapper_pages">
+            <header>
+                <div class="wrap_content">
+                    <h1>
+                        Front end test project
+                    </h1>
+                    <p>
+                        by: Alekseichuk_Aleksandr
+                    </p>
+                </div>
+            </header>
+            <section id="page_data_selection">
+                <div class="wrap_content">
+                    <h3>
+                        Please select data that you want to display:
+                    </h3>
+                    <div class="field_wrap_checkboxes">
+                        <div class="column">
+                            <ul>
+                                <li>
+                                    <label for="id">
+                                        <input type="checkbox" id="id">
+                                        id
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="isActive">
+                                        <input type="checkbox" id="isActive">
+                                        isActive
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="balance">
+                                        <input type="checkbox" id="balance">
+                                        balance
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="picture">
+                                        <input type="checkbox" id="picture">
+                                        picture
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="age">
+                                        <input type="checkbox" id="age">
+                                        age
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="eyeColor">
+                                        <input type="checkbox" id="eyeColor">
+                                        eyeColor
+                                    </label>
+                                </li>
+                            </ul>   
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li>
+                                    <label for="name">
+                                        <input type="checkbox" id="name">
+                                        name
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="gender">
+                                        <input type="checkbox" id="gender">
+                                        gender
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="company">
+                                        <input type="checkbox" id="company">
+                                        company
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="email">
+                                        <input type="checkbox" id="email">
+                                        email
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="phone">
+                                        <input type="checkbox" id="phone">
+                                        phone
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="address">
+                                        <input type="checkbox" id="address">
+                                        address
+                                    </label>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                    <div class="changes">
+                        <span id="selectAll">selectAll</span>
+                        <span>|</span>
+                        <span id="clearSelection">clearSelection</span>
+                    </div>
+                    
+                    <div class="Submit_btn btn">
+                        <span>Submit</span>
+                    </div>
+                </div>
+            </section>
+            <section id="page_selected_data">
+                <div class="wrap_content">
+                    <div class="Select_data_btn btn">
+                        <span class="Select_data_arrow"></span>
+                        <span>Select data</span>
+                    </div>
+                    <h3>
+                        Here is the data that you have requested:
+                    </h3>
+                    
+                    <table></table>
+                    
+                </div>
+            </section>
+        </div>
+       
+       
+       
+       
+       
+       
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+        <script src="../JS/vendor/checkboxPlug.js"></script>
+        <script src="../JS/main.js"></script>
+         
+<!--         <script>window.jQuery || document.write('<script src="JS/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+ 
+         <script src="JS/main.js"></script>-->
+
+    </body>
+</html>
