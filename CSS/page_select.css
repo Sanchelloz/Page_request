@@ -38,9 +38,26 @@ body .wrapper_pages header .wrap_content h1 {
 body .wrapper_pages header .wrap_content p {
   font-size: 14px;
 }
+#page-preloader {
+  background: #fff;
+  width: 100%;
+  height: 50%;
+  z-index: 100500;
+  position: relative;
+}
+#page-preloader .spinner {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url('../IMG/ajax-loader.gif') no-repeat 50% 50%;
+  margin: -16px 0 0 -16px;
+}
 #page_data_selection,
 #page_selected_data {
   width: 100%;
+  display: none;
 }
 #page_data_selection .wrap_content,
 #page_selected_data .wrap_content {
@@ -67,7 +84,7 @@ body .wrapper_pages header .wrap_content p {
 #page_data_selection .wrap_content .field_wrap_checkboxes .column ul li,
 #page_selected_data .wrap_content .field_wrap_checkboxes .column ul li {
   list-style: none;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 #page_data_selection .wrap_content .field_wrap_checkboxes .column ul li label,
 #page_selected_data .wrap_content .field_wrap_checkboxes .column ul li label {
@@ -83,15 +100,14 @@ body .wrapper_pages header .wrap_content p {
   display: inline-block;
   position: relative;
   top: -0.15em;
-  /* Adjust to for best fit */
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-right: 5px;
-  background: url('../IMG/checkbox_bg.png') 0 0 no-repeat;
+  background: url('../IMG/Sprite_checkbox.png') 0 -2px no-repeat;
 }
 #page_data_selection .wrap_content .field_wrap_checkboxes .column ul li label .custom-check.checked,
 #page_selected_data .wrap_content .field_wrap_checkboxes .column ul li label .custom-check.checked {
-  background: url('../IMG/checkbox_check.png') no-repeat;
+  background-position: -20px -2px;
 }
 #page_data_selection .wrap_content .changes,
 #page_selected_data .wrap_content .changes {
@@ -103,6 +119,13 @@ body .wrapper_pages header .wrap_content p {
 #page_selected_data .wrap_content .changes #clearSelection {
   text-decoration: underline;
   cursor: pointer;
+}
+#page_data_selection .wrap_content .changes #selectAll:active,
+#page_selected_data .wrap_content .changes #selectAll:active,
+#page_data_selection .wrap_content .changes #clearSelection:active,
+#page_selected_data .wrap_content .changes #clearSelection:active {
+  position: relative;
+  top: 1px;
 }
 #page_data_selection .wrap_content .btn,
 #page_selected_data .wrap_content .btn {
@@ -132,9 +155,13 @@ body .wrapper_pages header .wrap_content p {
   top: 1px;
 }
 #page_selected_data {
-  padding-top: 19px;
+  display: none;
 }
-#page_selected_data .btn {
+#page_selected_data .wrap_content {
+  padding-top: 19px;
+  box-sizing: border-box;
+}
+#page_selected_data .wrap_content .btn {
   border-radius: 5px;
   text-transform: uppercase;
   color: #ffffff;
@@ -147,7 +174,7 @@ body .wrapper_pages header .wrap_content p {
   background-image: -o-linear-gradient(top, #3181ac, #42b4da);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@ColorBtnTop', endColorstr='@ColorBtnBottom');
 }
-#page_selected_data .Select_data_btn {
+#page_selected_data .wrap_content .Select_data_btn {
   display: inline-block;
   position: relative;
   width: 136px;
@@ -157,7 +184,7 @@ body .wrapper_pages header .wrap_content p {
   line-height: 35px;
   text-transform: uppercase;
 }
-#page_selected_data .Select_data_btn .Select_data_arrow {
+#page_selected_data .wrap_content .Select_data_btn .Select_data_arrow {
   width: 20px;
   height: 14px;
   background: url('../IMG/arrow_back.png') 0 0 no-repeat;
@@ -166,16 +193,16 @@ body .wrapper_pages header .wrap_content p {
   top: 10px;
   margin: 0;
 }
-#page_selected_data .Select_data_btn span {
+#page_selected_data .wrap_content .Select_data_btn span {
   vertical-align: middle;
   margin-left: 20px;
 }
-#page_selected_data .Select_data_btn:active {
+#page_selected_data .wrap_content .Select_data_btn:active {
   position: relative;
   top: 1px;
 }
-#page_selected_data h3 {
+#page_selected_data .wrap_content h3 {
   display: inline-block;
   margin-left: 15px;
-  line-height: 1!important;
+  line-height: 1;
 }

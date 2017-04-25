@@ -23,47 +23,52 @@
                     </p>
                 </div>
             </header>
+            <div id="page-preloader"><span class="spinner"></span></div>
             <section id="page_data_selection">
-                <div class="wrap_content">
+                <form class="wrap_content">
+                    
                     <h3>
                         Please select data that you want to display:
                     </h3>
                     <div class="field_wrap_checkboxes">
+<!--
+                        <form action="" name="form1" method="post">
+-->
                         <div class="column">
                             <ul>
                                 <li>
                                     <label for="id">
-                                        <input type="checkbox" id="id">
+                                        <input type="checkbox" id="id" class="checkbox">
                                         id
                                     </label>
                                 </li>
                                 <li>
                                     <label for="isActive">
-                                        <input type="checkbox" id="isActive">
+                                        <input type="checkbox" id="isActive" class="checkbox">
                                         isActive
                                     </label>
                                 </li>
                                 <li>
                                     <label for="balance">
-                                        <input type="checkbox" id="balance">
+                                        <input type="checkbox" id="balance" class="checkbox">
                                         balance
                                     </label>
                                 </li>
                                 <li>
                                     <label for="picture">
-                                        <input type="checkbox" id="picture">
+                                        <input type="checkbox" id="picture" class="checkbox">
                                         picture
                                     </label>
                                 </li>
                                 <li>
                                     <label for="age">
-                                        <input type="checkbox" id="age">
+                                        <input type="checkbox" id="age" class="checkbox">
                                         age
                                     </label>
                                 </li>
                                 <li>
                                     <label for="eyeColor">
-                                        <input type="checkbox" id="eyeColor">
+                                        <input type="checkbox" id="eyeColor" class="checkbox">
                                         eyeColor
                                     </label>
                                 </li>
@@ -73,42 +78,43 @@
                             <ul>
                                 <li>
                                     <label for="name">
-                                        <input type="checkbox" id="name">
+                                        <input type="checkbox" id="name" class="checkbox">
                                         name
                                     </label>
                                 </li>
                                 <li>
                                     <label for="gender">
-                                        <input type="checkbox" id="gender">
+                                        <input type="checkbox" id="gender" class="checkbox">
                                         gender
                                     </label>
                                 </li>
                                 <li>
                                     <label for="company">
-                                        <input type="checkbox" id="company">
+                                        <input type="checkbox" id="company" class="checkbox">
                                         company
                                     </label>
                                 </li>
                                 <li>
                                     <label for="email">
-                                        <input type="checkbox" id="email">
+                                        <input type="checkbox" id="email" class="checkbox">
                                         email
                                     </label>
                                 </li>
                                 <li>
                                     <label for="phone">
-                                        <input type="checkbox" id="phone">
+                                        <input type="checkbox" id="phone" class="checkbox">
                                         phone
                                     </label>
                                 </li>
                                 <li>
                                     <label for="address">
-                                        <input type="checkbox" id="address">
+                                        <input type="checkbox" id="address" class="checkbox">
                                         address
                                     </label>
                                 </li>
                             </ul>   
                         </div>
+                        <!--</form>-->
                     </div>
                     <div class="changes">
                         <span id="selectAll">selectAll</span>
@@ -119,7 +125,7 @@
                     <div class="Submit_btn btn">
                         <span>Submit</span>
                     </div>
-                </div>
+                </form>
             </section>
             <section id="page_selected_data">
                 <div class="wrap_content">

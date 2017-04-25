@@ -38,6 +38,12 @@ $.fn.customRadioCheck = function() {
           }
           $elem.next(".custom-radio").removeClass('checked');
         }
+        
+        if ($(this).attr('checked')) {
+            $(this).removeAttr('checked');
+        } else {
+            $(this).attr('checked', true);
+        }
         $span.toggleClass('checked', $this.is(':checked'));
       },
       focus: function() { $span.addClass('focus'); },
