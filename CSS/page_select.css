@@ -206,3 +206,31 @@ body .wrapper_pages header .wrap_content p {
   margin-left: 15px;
   line-height: 1;
 }
+#page_selected_data .wrap_content table {
+  border-collapse: collapse;
+  font-size: 12px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 200;
+  width: 100%;
+  margin-top: 10px;
+}
+#page_selected_data .wrap_content table thead {
+  background: #94c6de;
+}
+#page_selected_data .wrap_content table thead th {
+  border: solid #fff 1px;
+  padding: 0 5px;
+  height: 50px;
+}
+#page_selected_data .wrap_content table tbody {
+  background: #f0f0f0;
+}
+#page_selected_data .wrap_content table tbody tr:nth-child(odd) {
+  background: #e3e3e3;
+}
+#page_selected_data .wrap_content table td {
+  border: solid #fff 1px;
+  height: 80px;
+  padding: 0 5px;
+  text-align: center;
+}

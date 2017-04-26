@@ -1,6 +1,8 @@
 @import "main.less";
 @colorBlue: #1881ad;
-
+@LightBlue: #94c6de;
+@Grey: #e3e3e3;
+@LightGrey: #f0f0f0;
     
         #page-preloader {
             //position: fixed;
@@ -162,6 +164,37 @@
             display: inline-block;
             margin-left: 15px;
             line-height: 1;
+        }
+        table {
+            border-collapse: collapse;
+            font-size: 12px;
+            font-family: 'Arial', sans-serif;
+            font-weight: 200;
+            width: 100%;
+            margin-top: 10px;
+            thead{
+                background: @LightBlue;
+                th {
+                    border: solid #fff 1px;
+                    padding: 0 5px;
+                    height: 50px;
+                }
+            }
+            tbody {
+                
+                background: @LightGrey;
+                
+                tr:nth-child(odd){
+                    background: @Grey;
+                }
+            }
+            td{
+                border: solid #fff 1px;
+                padding: 0 5px;
+                height: 80px;
+                padding: 0 5px;
+                text-align: center;
+            }
         }
     }
 }
