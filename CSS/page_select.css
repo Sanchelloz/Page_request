@@ -78,7 +78,7 @@ body .wrapper_pages header .wrap_content p {
 }
 #page_data_selection .wrap_content .field_wrap_checkboxes .column,
 #page_selected_data .wrap_content .field_wrap_checkboxes .column {
-  display: inline-block;
+  float: left;
   width: 210px;
 }
 #page_data_selection .wrap_content .field_wrap_checkboxes .column ul li,
@@ -108,6 +108,12 @@ body .wrapper_pages header .wrap_content p {
 #page_data_selection .wrap_content .field_wrap_checkboxes .column ul li label .custom-check.checked,
 #page_selected_data .wrap_content .field_wrap_checkboxes .column ul li label .custom-check.checked {
   background-position: -20px -2px;
+}
+#page_data_selection .wrap_content .field_wrap_checkboxes:after,
+#page_selected_data .wrap_content .field_wrap_checkboxes:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 #page_data_selection .wrap_content .changes,
 #page_selected_data .wrap_content .changes {
@@ -206,31 +212,43 @@ body .wrapper_pages header .wrap_content p {
   margin-left: 15px;
   line-height: 1;
 }
-#page_selected_data .wrap_content table {
+#page_selected_data .wrap_content .wrap_table_data {
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space: normal;
+  min-height: 100px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+#page_selected_data .wrap_content .wrap_table_data table {
   border-collapse: collapse;
   font-size: 12px;
   font-family: 'Arial', sans-serif;
   font-weight: 200;
   width: 100%;
-  margin-top: 10px;
+  position: relative;
 }
-#page_selected_data .wrap_content table thead {
+#page_selected_data .wrap_content .wrap_table_data table thead {
   background: #94c6de;
 }
-#page_selected_data .wrap_content table thead th {
+#page_selected_data .wrap_content .wrap_table_data table thead th {
   border: solid #fff 1px;
   padding: 0 5px;
   height: 50px;
 }
-#page_selected_data .wrap_content table tbody {
+#page_selected_data .wrap_content .wrap_table_data table tbody {
   background: #f0f0f0;
 }
-#page_selected_data .wrap_content table tbody tr:nth-child(odd) {
+#page_selected_data .wrap_content .wrap_table_data table tbody tr:nth-child(odd) {
   background: #e3e3e3;
 }
-#page_selected_data .wrap_content table td {
+#page_selected_data .wrap_content .wrap_table_data table td {
   border: solid #fff 1px;
   height: 80px;
   padding: 0 5px;
   text-align: center;
+}
+#page_selected_data .wrap_content .wrap_table_data table .About {
+  width: 70%;
+  min-width: 250px;
 }

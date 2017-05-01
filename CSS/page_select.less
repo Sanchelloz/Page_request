@@ -42,7 +42,7 @@
         .field_wrap_checkboxes{
             margin-bottom: 30px;
             .column{
-                display: inline-block;
+                float: left;
                 width: 210px;
                 ul li{
                     list-style: none;
@@ -72,6 +72,11 @@
                     }
                 }
             }   
+        }
+        .field_wrap_checkboxes:after{
+            content: "";
+            display: table;
+            clear: both;
         }
         .changes{
             margin-bottom: 10px;
@@ -165,35 +170,48 @@
             margin-left: 15px;
             line-height: 1;
         }
-        table {
-            border-collapse: collapse;
-            font-size: 12px;
-            font-family: 'Arial', sans-serif;
-            font-weight: 200;
-            width: 100%;
+        .wrap_table_data{
+            overflow: hidden;
+            overflow-x: scroll;
+            white-space: normal;
+            
+            min-height: 100px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
             margin-top: 10px;
-            thead{
-                background: @LightBlue;
-                th {
+            table {
+                border-collapse: collapse;
+                font-size: 12px;
+                font-family: 'Arial', sans-serif;
+                font-weight: 200;
+                width: 100%;
+                position: relative;
+                thead{
+                    background: @LightBlue;
+                    th {
+                        border: solid #fff 1px;
+                        padding: 0 5px;
+                        height: 50px;
+                    }
+                }
+                tbody {
+
+                    background: @LightGrey;
+
+                    tr:nth-child(odd){
+                        background: @Grey;
+                    }
+                }
+                td{
                     border: solid #fff 1px;
                     padding: 0 5px;
-                    height: 50px;
+                    height: 80px;
+                    padding: 0 5px;
+                    text-align: center;
                 }
-            }
-            tbody {
-                
-                background: @LightGrey;
-                
-                tr:nth-child(odd){
-                    background: @Grey;
+                .About {
+                    width:70%;
+                    min-width:250px;
                 }
-            }
-            td{
-                border: solid #fff 1px;
-                padding: 0 5px;
-                height: 80px;
-                padding: 0 5px;
-                text-align: center;
             }
         }
     }
