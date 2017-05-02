@@ -46,7 +46,14 @@ $(document).ready(function() {
             requestedId.push(id);
         }
         
-        BuildTable(requestedId)
+        BuildTable(requestedId);
+        
+        $("#requested_data").tablesorter({
+            widgets:['zebra'],
+            cancelSelection:false,
+            debug:true,
+        });
+        
     });
     
 });

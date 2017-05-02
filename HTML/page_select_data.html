@@ -10,6 +10,13 @@
 
         <link rel="stylesheet" href="../CSS/main.css">
         <link rel="stylesheet" href="../CSS/page_select.css">
+        <link rel="stylesheet" href="../CSS/styleTablesorter.css">
+        
+        <script type="text/javascript" src="../JS/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="../JS/jquery.tablesorter.js"></script>
+        <script type="text/javascript" src="../JS/jquery.tablesorter.pager.js"></script>
+        
+        
     </head>
     <body>
         <div class="wrapper_pages">
@@ -182,7 +189,7 @@
                                 </li>
                                 
                             </ul>   
-                        </div>                        <!--</form>-->
+                        </div>                        
                     </div>
                     <div class="changes">
                         <span id="selectAll">selectAll</span>
@@ -205,8 +212,8 @@
                         Here is the data that you have requested:
                     </h3>
                     <div class="wrap_table_data">
-                        <table id="requested_data">
-                            
+                        <table id="requested_data" class="tablesorter">
+                            <!---->
                             <thead>
                                 <tr></tr>
                             </thead>
@@ -224,7 +231,6 @@
        
        
        
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         
         <script src="../JS/vendor/checkboxPlug.js"></script>
         <script src="../JS/main.js"></script>
